@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Livro</title>
+</head>
+<body>
+
+<input type="submit" onclick="location.href = '{% url biblioteca:list %}'" value="Voltar para a lista">
+<br />
+Nome: {{ object.title }}
+<br />
+Autor: {{ object.author }}
+<br />
+Editora: {{ object.publisher }}
+<br />
+Gênero: {{ object.genre }}
+<br />
+Ano: {{ object.year }}
+<br />
+Descrição: {{ object.description }}
+
+</body>
+</html>
